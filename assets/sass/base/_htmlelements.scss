@@ -1,0 +1,62 @@
+// HTML elements
+// -------------------
+// The base styles for all the key HTML elements.
+
+// This partial is for base element styling only.
+// If it is not an element selector or pseudo class of a base element
+// then it does not belong in this file.
+
+html,
+body {
+	word-break: break-word;
+	word-wrap: break-word; // Both required to cover all browsers
+	// -webkit-font-smoothing: antialiased; // make text look sharper.
+}
+
+// *,
+// *::before,
+// *::after {
+// 	// box-sizing: inherit;
+// }
+
+// Highlight colours
+// ::selection {}
+// ::-moz-selection {}
+
+a {
+	&:link,
+	&:visited {
+		position: relative;
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+p, dl, address, cite {
+	margin: 0 0 1rem;
+}
+
+p {
+	margin-bottom: rem(14px);
+	font-size: 16px;
+	letter-spacing: 0.2px;
+	font-weight: 300;
+	-webkit-font-smoothing: auto;
+	@include md-up {
+		margin-bottom: rem(18px);
+	}
+}
+

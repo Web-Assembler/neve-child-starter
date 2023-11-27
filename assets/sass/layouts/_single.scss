@@ -1,0 +1,15 @@
+.single {
+	.post__excerpt {
+		@include md-up {
+			max-width: 740px;
+		}
+	}
+	.post__featured-image {
+		margin: rem($block-gap) 0;
+		margin-bottom: rem(56px);
+		display: block;
+		img {
+			display: block;
+		}
+	}
+}

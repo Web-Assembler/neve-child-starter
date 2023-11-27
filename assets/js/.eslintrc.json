@@ -1,0 +1,15 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": "airbnb-base",
+	"rules": {
+		// Add your custom rules here or override existing rules from the "airbnb-base" config.
+		"no-useless-concat": "off",
+		"prefer-template": "off",
+		"indent": ["error", 4],
+		"no-unused-vars": "off"
+	}
+}

@@ -1,0 +1,126 @@
+{
+	"plugins": [
+		"stylelint-scss"
+	],
+	"customSyntax": "postcss-scss",
+	"extends": [
+		"stylelint-config-standard"
+	],
+	"ignoreFiles": [
+		"**/*.js"
+	],
+	"rules": {
+		"block-no-empty": null,
+		"color-hex-length": "long",
+		"color-function-notation": "legacy",
+		"length-zero-no-unit": [
+			true,
+			{
+				"ignoreFunctions": [
+					"rgba"
+				]
+			}
+		],
+		"custom-property-pattern": null,
+		"selector-class-pattern": null,
+		"selector-not-notation": "simple",
+		"import-notation": "string",
+		"no-duplicate-at-import-rules": true,
+		"no-descending-specificity": null,
+		"property-no-vendor-prefix": null,
+		"selector-no-vendor-prefix": null,
+		"annotation-no-unknown": [
+			true,
+			{
+				"ignoreAnnotations": [
+					"default"
+				]
+			}
+		],
+		"function-no-unknown": [
+			true,
+			{
+				"ignoreFunctions": [
+					"math.div",
+					"lighten",
+					"darken",
+					"breakpoint-next",
+					"breakpoint-infix",
+					"rem-convert",
+					"rem-separator",
+					"append",
+					"nth",
+					"percentage"
+				]
+			}
+		],
+		"at-rule-empty-line-before": [
+			"always",
+			{
+				"except": ["blockless-after-same-name-blockless", "first-nested", "inside-block"],
+				"ignore": ["after-comment"]
+			}
+		],
+		"font-family-name-quotes": "always-unless-keyword",
+		"at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": [
+					"use",
+					"each",
+					"else",
+					"extend",
+					"for",
+					"function",
+					"if",
+					"include",
+					"mixin",
+					"return",
+					"while",
+					"warn",
+					"content"
+				]
+			}
+		],
+		"declaration-empty-line-before": "never",
+		"declaration-block-no-redundant-longhand-properties": null,
+		"rule-empty-line-before": [
+			"always",
+			{
+				"except": [
+					"first-nested"
+				],
+				"ignore": [
+					"after-comment",
+					"inside-block"
+				]
+			}
+		],
+		"shorthand-property-no-redundant-values": true,
+		"alpha-value-notation": [
+			"percentage",
+			{
+				"exceptProperties": [
+					"opacity"
+				]
+			}
+		],
+		"color-no-invalid-hex": true,
+		"comment-no-empty": null,
+		"scss/at-rule-no-unknown": true,
+		"scss/at-import-partial-extension": null,
+		"scss/comment-no-empty": true,
+		"scss/double-slash-comment-whitespace-inside": "always",
+		"scss/selector-no-redundant-nesting-selector": true,
+		"selector-no-qualifying-type": null,
+		"selector-max-compound-selectors": 10,
+		"value-keyword-case": [
+			"lower",
+			{
+				"ignoreKeywords": [
+					"currentColor"
+				]
+			}
+		]
+	}
+}

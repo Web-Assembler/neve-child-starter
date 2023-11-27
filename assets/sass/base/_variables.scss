@@ -1,0 +1,65 @@
+// Variables
+// -------------------
+// Defines the main variables for use throughout all the other partials.
+// It's mainly colours and a few default sizes / margins that are used through the theme.
+
+// -------------------
+// Font Variables
+// -------------------
+
+// Font sizes
+$base-font-size: 16px; // sets the spacer variable = 1rem
+$base-line-height: 1.8;
+
+
+// -------------------
+// Form Variables
+// -------------------
+$input-placeholder: #C0C0C0;
+$input-border: #9d9d9d;
+$input-border--hover-focus: #5A5A5A;
+$input-radius: 5px;
+$checkbox-border: $input-border;
+$input-color: #2c2c2c;
+$form-transition-speed: 120ms;
+
+
+// ---------------------------
+// Theme & Layout Variables
+// ---------------------------
+$gutter-spacing: 15px;
+
+$width--wide: 1450px;
+$width--container--max: 1400px;
+$width--block--xlarge: 1200px;
+$width--block--large: 1100px;
+$width--block--medium: 960px;
+$width--block--small: 760px;
+
+$width--block--wide: $width--block--xlarge;
+
+// Block gap - gap above gutnberg blocks.
+$block-gap: 30px;
+
+
+// -------------------
+// Breakpoint Variables
+// -------------------
+$breakpoint--zero: 0;
+$breakpoint--xxs: 360px;
+$breakpoint--xs: 400px;
+$breakpoint--sm: 567px;
+$breakpoint--md: 768px;
+$breakpoint--lg: 992px;
+$breakpoint--xl: 1200px;
+$breakpoint--xl-mid: 1345px;  // largest width + gutters
+$breakpoint--xxl: 1440px;
+
+// Get values just below the max value for media breakpoints down:
+$breakpoint--xxs--down: $breakpoint--xxs - 1;
+$breakpoint--xs--down: $breakpoint--xs - 1;
+$breakpoint--sm--down: $breakpoint--sm - 1;
+$breakpoint--md--down: $breakpoint--md - 1;
+$breakpoint--lg--down: $breakpoint--lg - 1;
+$breakpoint--xl--down: $breakpoint--xl - 1;
+$breakpoint--xxl--down: $breakpoint--xxl - 1;

@@ -1,0 +1,51 @@
+// Layout
+// -------------------
+// The base styles for all the layout elements.
+
+html {
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.container {
+	@include xs-up {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	@include md-up {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+	@include xl-up {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+.alignwide {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $width--block--wide; // 1040 // for alignwide
+}
+
+.alignfull {
+	margin-left: calc(-100vw / 2 + 100% / 2);
+	margin-right: calc(-100vw / 2 + 100% / 2);
+	max-width: 100vw;
+	width: 100vw;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+// Get rid of full-width overflow issues.
+.site#page {
+	overflow: hidden;
+	position: relative;
+}
+

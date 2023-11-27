@@ -1,0 +1,38 @@
+# Ignore all files and directories starting with . or ~ or ._ or ending with ~
+.*
+~*
+*~
+._*
+# but track
+!.browserslist
+!.editorconfig
+!.gitattributes
+!.gitignore
+!.jscsrc
+!.stylelintrc
+!.prettierignore
+!.jshintignore
+!.eslintrc.json
+
+# Ignore all files with .lock extentions
+*.lock
+# but track
+!composer.lock
+
+# Dependencies
+node_modules
+!assets/sass/vendor
+!assets/js/vendor
+
+# Other specific files and directories
+phpcs.xml
+dist-product/
+**/img
+!/assets/img
+npm-debug.log
+
+# Custom ignored (while setting up theme)
+.sass-cache
+.DS_Store
+Thumbs.db
+package-lock.json

@@ -1,0 +1,29 @@
+{
+	"browserSyncOptions": {
+		"proxy": "https://neve-child.local",
+		"host": "neve-child.local",
+		"open": false,
+		"https": {
+			"key": "/Users/anthonyhartnell/Library/Application\u0020Support/Local/run/router/nginx/certs/neve-child.local.key",
+			"cert": "/Users/anthonyhartnell/Library/Application\u0020Support/Local/run/router/nginx/certs/neve-child.local.crt"
+		},
+		"notify": false,
+		"files": [
+			"./assets/css/*.min.css",
+			"./assets/js/*.min.js",
+			"./**/*.php"
+		]
+	},
+	"paths": {
+		"js": "./assets/js",
+		"css": "./assets/css",
+		"fonts": "./assets/fonts",
+		"img": "./assets/img",
+		"imgsrc": "./assets/img/src",
+		"sass": "./assets/sass",
+		"node": "./node_modules",
+		"composer": "./vendor",
+		"dist": "./assets/dist",
+		"distprod": "./dist-product"
+	}
+}

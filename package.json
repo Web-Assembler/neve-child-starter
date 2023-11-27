@@ -1,0 +1,57 @@
+{
+	"name": "nevechild",
+	"version": "0.0.1",
+	"description": "WordPress child theme framework",
+	"private": true,
+	"main": "assets/js/main.js",
+	"engines": {
+		"node": "16.5.0"
+	},
+	"keywords": [],
+	"author": "webassembler",
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"@babel/core": "^7.15.0",
+		"@babel/preset-env": "^7.15.0",
+		"autoprefixer": "^9.8.8",
+		"babel-loader": "^8.2.2",
+		"browser-sync-webpack-plugin": "^2.3.0",
+		"clean-webpack-plugin": "^4.0.0",
+		"css-loader": "^6.2.0",
+		"css-minimizer-webpack-plugin": "^3.0.2",
+		"eslint": "^7.32.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-loader": "^4.0.2",
+		"eslint-plugin-import": "^2.28.0",
+		"media-query-plugin": "^1.5.0",
+		"mini-css-extract-plugin": "^2.7.3",
+		"postcss": "^8.4.7",
+		"postcss-loader": "^6.2.1",
+		"postcss-preset-env": "^7.0.1",
+		"postcss-scss": "^4.0.6",
+		"sass": "^1.58.3",
+		"sass-loader": "^12.1.0",
+		"style-loader": "^3.2.1",
+		"stylelint": "^15.2.0",
+		"stylelint-config-standard": "^30.0.1",
+		"stylelint-scss": "^4.4.0",
+		"stylelint-webpack-plugin": "^4.1.0",
+		"velocity-animate": "1.5.2",
+		"webpack": "^5.45.1",
+		"webpack-cli": "^4.7.2",
+		"webpack-messages": "^2.0.4"
+	},
+	"scripts": {
+		"build": "webpack --env production --progress --color",
+		"watch": "webpack --env production=false --env development --watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"browserslist": [
+		"> 0.25%",
+		"not dead"
+	],
+	"prettier": {
+		"Tabs": true,
+		"tabWidth": 2
+	}
+}

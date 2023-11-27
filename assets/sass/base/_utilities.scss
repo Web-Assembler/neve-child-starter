@@ -1,0 +1,116 @@
+// Utility classes
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix.
+.clearfix::after,
+.clearfix::before {
+	content: '';
+	display: table;
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+// Hidden.
+.hidden {
+	display: none;
+}
+
+.visually-hidden {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+// Show classes.
+.show--md-up {
+	display: none;
+	@include md-up {
+		display: block;
+	}
+}
+
+.show--lg-up {
+	@include lg-up {
+		display: block;
+	}
+}
+
+// Hide lasses.
+.hide--md-up {
+	@include md-up {
+		display: none;
+	}
+}
+
+.hide--lg-up {
+	@include lg-up {
+		display: none;
+	}
+}
+
+// Screen reader
+.sr-only {
+	@include sr-only;
+}
+
+.sr-only-focusable {
+	@include sr-only-focusable;
+}
+
+a.skip-link {
+	background: white;
+	// padding: 10px;
+	color: black !important;
+	z-index: 999 !important;
+}
+
+// Gutenberg text alignment classes
+.has-text-align-left {
+	text-align: left;
+}
+
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-right {
+	text-align: right;
+}
+
+// Lists
+.list--reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+// Card hover effects
+.linkify:hover {
+	cursor: pointer;
+	a.card__link:not(.button) {
+		text-decoration: underline;
+	}
+}
+
+.isfocused {
+	outline: 0;
+	// box-shadow: 0 0 0 2px var(--wp--preset--color--evolve-yellow-dark);
+	a:focus {
+		outline: none;
+	}
+}
