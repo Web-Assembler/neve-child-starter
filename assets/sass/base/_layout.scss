@@ -2,10 +2,10 @@
 // -------------------
 // The base styles for all the layout elements.
 
-html {
-	box-sizing: border-box;
-	-ms-overflow-style: scrollbar;
-}
+// html {
+// 	box-sizing: border-box;
+// 	-ms-overflow-style: scrollbar;
+// }
 
 *,
 *::before,
@@ -14,18 +14,18 @@ html {
 }
 
 .container {
-	@include xs-up {
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-	@include md-up {
-		padding-left: 35px;
-		padding-right: 35px;
-	}
-	@include xl-up {
-		padding-left: 50px;
-		padding-right: 50px;
-	}
+	// @include xs-up {
+	// 	padding-left: 25px;
+	// 	padding-right: 25px;
+	// }
+	// @include md-up {
+	// 	padding-left: 35px;
+	// 	padding-right: 35px;
+	// }
+	// @include xl-up {
+	// 	padding-left: 50px;
+	// 	padding-right: 50px;
+	// }
 }
 
 .alignwide {
